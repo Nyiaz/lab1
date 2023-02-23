@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+</head>
+<body>
+<script>
+  "use strict";
+  const a = parseFloat(prompt("Введите a", ""));
+  const b = parseFloat(prompt("Введите b", ""));
+  const x = parseFloat(prompt("Введите x", ""));
+  const y = parseFloat(prompt("Введите y", ""));
+  const z = parseFloat(prompt("Введите z", ""));
+  const solS = a * b;
+  const solP = 2 * (a + b);
+  const solB = (Math.pow(y, 3))/(x + Math.pow(y, 3) * Math.pow(Math.cos(z), 2));
+
+  document.write(`<p>Площадь и периметр прямоугольника со сторонами a, b</p>`);
+  document.write(`<img src="images/1.png">`);
+  document.write(`<p>Ответ: S = ${solS}; P = ${solP};</p>`);
+
+  document.write(`<img src="images/2.png">`);
+  document.write(`<p>Ответ: B = ${solB};</p>`);
+
+</script>
+</body>
+</html>
